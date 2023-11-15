@@ -3,7 +3,7 @@
 /**
  * f_add - It adds the top two elements of the stack
  * @head: The stack head
- * @counter: line_num
+ * @counter: The line_num
  * Return: There is no return
  */
 void f_add(stack_t **head, unsigned int counter)
