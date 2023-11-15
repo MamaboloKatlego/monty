@@ -1,15 +1,19 @@
 0x19. C - Stacks, Queues - LIFO, FIFO
 
 About:
+
 In this project, we created a simple interpreter for Monty ByteCodes. The interpreter reads a bytecode file and executes the bytecode commands.
 
 The Monty language:
+
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it.
 
 Monty byte code files:
+
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument: examples
 
 Objectives:
+
 To know what LIFO and FIFO mean
 To know what a stack is, and when to use it
 To know what a queue is, and when to use it
@@ -18,9 +22,11 @@ To know the most common use cases of stacks and queues
 To know the proper way to use global variables
 
 Resource:
+
 Difference between Stack and Queue Data Structures ||
 
 General Requirements:
+
 Allowed editors: vi, vim, emacs
 All files is compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All files ends with a new line
@@ -32,6 +38,7 @@ The prototypes of all the functions were included in the header file called mont
 All the header files are include guarded
 
 Instruction given:
+
 To use the following data structures for this project, and to also include them in the header file.
 
 /**
@@ -78,6 +85,7 @@ Any output must be printed on stdout
 Any error message must be printed on stderr
 
 Examples:
+
 julien@ubuntu:~/monty$ cat -e bytecodes/000.m
 push 0$
 push 1$
@@ -111,6 +119,7 @@ pall This is the end of our program. Monty is awesome!$
 julien@ubuntu:~/monty$
 
 Some examples of using monty and its console output:
+
 Example #1	
 ~/monty$ cat -e bytecodes/00.m
 push 1$
@@ -121,6 +130,7 @@ pall$
 3
 2
 1
+
 Example #2
 ~/monty$ cat bytecodes/07.m
 push 1
@@ -140,6 +150,7 @@ pall
 2
 1
 1
+
 Example #3
 ~/monty$ cat bytecodes/09.m
 push 1
@@ -155,5 +166,6 @@ pall
 2
 3
 1
+
 Author:
 Mamabolo Katlego<rabotaikatlego@gmail.com>
