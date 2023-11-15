@@ -1,10 +1,12 @@
 0x19. C - Stacks, Queues - LIFO, FIFO
-About: In this project, we created a simple interpreter for Monty ByteCodes. The interpreter reads a bytecode file and executes the bytecode commands.
 
-The Monty language
+About:
+In this project, we created a simple interpreter for Monty ByteCodes. The interpreter reads a bytecode file and executes the bytecode commands.
+
+The Monty language:
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it.
 
-Monty byte code files
+Monty byte code files:
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument: examples
 
 Objectives:
@@ -14,9 +16,11 @@ To know what a queue is, and when to use it
 To know the common implementations of stacks and queues
 To know the most common use cases of stacks and queues
 To know the proper way to use global variables
+
 Resource:
 Difference between Stack and Queue Data Structures ||
-General Requirements
+
+General Requirements:
 Allowed editors: vi, vim, emacs
 All files is compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All files ends with a new line
@@ -26,8 +30,10 @@ No more than 5 functions per file
 The C standard library is allowed
 The prototypes of all the functions were included in the header file called monty.h
 All the header files are include guarded
+
 Instruction given:
 To use the following data structures for this project, and to also include them in the header file.
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -43,6 +49,7 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
+
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
@@ -56,6 +63,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
+
 List of files/Descriptions:
 S/N	Files	Description
 1.		
@@ -63,11 +71,13 @@ S/N	Files	Description
 3.		
 4.		
 5.		
-Compilation & Output
+Compilation & Output:
+
 These codes were compiled using: gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
 Any output must be printed on stdout
 Any error message must be printed on stderr
-Examples
+
+Examples:
 julien@ubuntu:~/monty$ cat -e bytecodes/000.m
 push 0$
 push 1$
@@ -79,6 +89,7 @@ push 4$
       push    6        $
 pall$
 julien@ubuntu:~/monty$
+
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 
 julien@ubuntu:~/monty$ cat -e bytecodes/001.m
@@ -98,8 +109,9 @@ $
 $
 pall This is the end of our program. Monty is awesome!$
 julien@ubuntu:~/monty$
-Some examples of using monty and its console output.
-Example #1	Example #2	Example #3
+
+Some examples of using monty and its console output:
+Example #1	
 ~/monty$ cat -e bytecodes/00.m
 push 1$
 push 2$
@@ -108,7 +120,9 @@ pall$
 ~/monty$ ./monty bytecodes/00.m
 3
 2
-1	~/monty$ cat bytecodes/07.m
+1
+Example #2
+~/monty$ cat bytecodes/07.m
 push 1
 push 2
 push 3
@@ -125,7 +139,9 @@ pall
 1
 2
 1
-1	~/monty$ cat bytecodes/09.m
+1
+Example #3
+~/monty$ cat bytecodes/09.m
 push 1
 push 2
 push 3
@@ -139,5 +155,5 @@ pall
 2
 3
 1
-Authors/Collaborators
-: Mamabolo Katlego<rabotaikatlego@gmail.com>
+Author:
+Mamabolo Katlego<rabotaikatlego@gmail.com>
